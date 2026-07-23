@@ -93,7 +93,10 @@ tabpilot-/
 	•	Browser: Chrome Extension (MV3)
 
 Contributing
-Pull requests welcome! Feel free to open issues for bugs, feature ideas, or model improvements.
+
+Pull requests 
+
+Welcome! Feel free to open issues for bugs, feature ideas, or model improvements.
 License
 MIT © mrphatom
 
