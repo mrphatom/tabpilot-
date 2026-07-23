@@ -1,6 +1,3 @@
-Got it — the mobile rendering looks like trash right now. 😩
-The previous copy-paste probably got mangled with line breaks. Here’s a clean, GitHub-optimized version that should render nicely everywhere.
-Full `README.md` (copy this entire block):
 # TabPilot
 
 **AI-Powered Browser Automation Agent**  
