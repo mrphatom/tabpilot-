@@ -76,7 +76,8 @@ tabpilot-/
 ├── vite.config.ts
 └── tailwind.config.js
 
-Roadmap
+## Roadmap
+
 	•	Add support for multiple models (Claude, GPT, local Ollama via Blink)
 	•	Persistent sessions / history
 	•	Better error recovery & retry logic
@@ -84,7 +85,8 @@ Roadmap
 	•	Export extracted data (JSON/CSV)
 	•	Chrome Web Store listing
 
-Tech Stack
+## Tech Stack
+
 	•	Frontend: React 19 + TypeScript + Tailwind CSS
 	•	Build: Vite
 	•	AI: @blinkdotnew/sdk
