@@ -25,9 +25,9 @@ Perfect for research, shopping, data collection, repetitive tasks, and more.
 
 ## Demo
 
-![TabPilot Demo](https://github.com/mrphatom/tabpilot-/assets/demo.gif)
+![TabPilot Demo Coming Soon]([attachment_0](attachment))
 
-> *Replace the link above with your actual GIF after uploading it (recommended). Record a short screen capture of the popup + agent in action.*
+> *Demo recording coming soon!*
 
 ---
 
