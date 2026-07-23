@@ -44,29 +44,45 @@ Perfect for research, shopping, data collection, repetitive tasks, and more.
    ```bash
    git clone [https://github.com/mrphatom/tabpilot-.git](https://github.com/mrphatom/tabpilot-.git)
    cd tabpilot-
+   ```
 
- * Install dependencies
+2. **Install dependencies**
+   ```bash
    npm install
+   ```
 
- * Set up environment variables
-   Create .env in root:
+3. **Set up environment variables**  
+   Create `.env` in root:
+   ```env
    VITE_BLINK_PROJECT_ID=your_project_id
-VITE_BLINK_SECRET_KEY=your_secret_key
+   VITE_BLINK_SECRET_KEY=your_secret_key
+   ```
 
- * Build
+4. **Build**
+   ```bash
    npm run build
+   ```
 
- * Load in Chrome
-   * Go to chrome://extensions/
-   * Enable Developer mode
-   * Click Load unpacked → select the dist folder
-How It Works
- * Open the TabPilot popup.
- * Enter a task in plain English.
- * The extension creates a hidden sandbox tab.
- * The AI agent observes the page and decides actions step-by-step.
- * Results and extracted data appear in the popup.
-Project Structure
+5. **Load in Chrome**
+   - Go to `chrome://extensions/`
+   - Enable **Developer mode**
+   - Click **Load unpacked** → select the `dist` folder
+
+---
+
+## How It Works
+
+1. Open the **TabPilot** popup.
+2. Enter a task in plain English.
+3. The extension creates a hidden sandbox tab.
+4. The AI agent observes the page and decides actions step-by-step.
+5. Results and extracted data appear in the popup.
+
+---
+
+## Project Structure
+
+```text
 tabpilot-/
 ├── src/
 │   ├── App.tsx          # Popup UI + logging
@@ -78,8 +94,13 @@ tabpilot-/
 ├── scripts/
 ├── vite.config.ts
 └── tailwind.config.js
+```
 
-Manifest (public/manifest.json)
+---
+
+## Manifest (`public/manifest.json`)
+
+```json
 {
   "manifest_version": 3,
   "name": "TabPilot",
@@ -107,21 +128,40 @@ Manifest (public/manifest.json)
   "permissions": ["storage", "activeTab", "tabs", "scripting"],
   "host_permissions": ["<all_urls>"]
 }
+```
 
-Roadmap
- * [ ] Add support for multiple models (Claude, GPT, local Ollama via Blink)
- * [ ] Persistent sessions / history
- * [ ] Better error recovery & retry logic
- * [ ] Screenshots in logs
- * [ ] Export extracted data (JSON/CSV)
- * [ ] Chrome Web Store listing
-Tech Stack
- * Frontend: React 19 + TypeScript + Tailwind CSS
- * Build Tool: Vite
- * AI Integration: @blinkdotnew/sdk
- * Platform: Chrome Extension (Manifest V3)
-Contributing
+---
+
+## Roadmap
+
+- [ ] Add support for multiple models (Claude, GPT, local Ollama via Blink)
+- [ ] Persistent sessions / history
+- [ ] Better error recovery & retry logic
+- [ ] Screenshots in logs
+- [ ] Export extracted data (JSON/CSV)
+- [ ] Chrome Web Store listing
+
+---
+
+## Tech Stack
+
+- **Frontend:** React 19 + TypeScript + Tailwind CSS
+- **Build Tool:** Vite
+- **AI Integration:** `@blinkdotnew/sdk`
+- **Platform:** Chrome Extension (Manifest V3)
+
+---
+
+## Contributing
+
 Pull requests welcome! Feel free to open issues for bugs, feature ideas, or model improvements.
-License
+
+---
+
+## License
+
 MIT © mrphatom
+
+---
+
 Made with ❤️ and a bit too many open tabs.
