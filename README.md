@@ -1,3 +1,6 @@
+Got it — the mobile rendering looks like trash right now. 😩
+The previous copy-paste probably got mangled with line breaks. Here’s a clean, GitHub-optimized version that should render nicely everywhere.
+Full `README.md` (copy this entire block):
 # TabPilot
 
 **AI-Powered Browser Automation Agent**  
@@ -27,7 +30,7 @@ Perfect for research, shopping, data collection, repetitive tasks, and more.
 
 ![TabPilot Demo](https://github.com/mrphatom/tabpilot-/assets/demo.gif)
 
-> *Replace the link above with your actual GIF after uploading it to the repo (e.g., in a `/assets` folder or GitHub release). Record a short screen capture of the popup + agent in action for best results.*
+> *Replace the link above with your actual GIF after uploading it (recommended). Record a short screen capture of the popup + agent in action.*
 
 ---
 
@@ -40,19 +43,19 @@ Perfect for research, shopping, data collection, repetitive tasks, and more.
 
 ### Quick Start
 
-1. **Clone the repo**
+1. Clone the repo
    ```bash
    git clone https://github.com/mrphatom/tabpilot-.git
    cd tabpilot-
 	2	Install dependencies npm install
 	3	
-	4	Set up environment Create a .env file in the root: VITE_BLINK_PROJECT_ID=your_project_id
+	4	Set up environment variables Create .env in root: VITE_BLINK_PROJECT_ID=your_project_id
 	5	VITE_BLINK_SECRET_KEY=your_secret_key
 	6	
-	7	Build the extension npm run build
+	7	Build npm run build
 	8	
 	9	Load in Chrome
-	◦	Open chrome://extensions/
+	◦	Go to chrome://extensions/
 	◦	Enable Developer mode
 	◦	Click Load unpacked → select the dist folder
 
@@ -60,7 +63,7 @@ How It Works
 	1	Open the TabPilot popup.
 	2	Enter a task in plain English.
 	3	The extension creates a hidden sandbox tab.
-	4	The AI agent (via Blink) observes the page and decides actions step-by-step.
+	4	The AI agent observes the page and decides actions step-by-step.
 	5	Results and extracted data appear in the popup.
 
 Project Structure
@@ -68,11 +71,11 @@ tabpilot-/
 ├── src/
 │   ├── App.tsx          # Popup UI + logging
 │   ├── background.ts    # Agent loop + Chrome APIs
-│   └── content.ts       # Sandbox tab actions + element detection
+│   └── content.ts       # Sandbox tab actions
 ├── public/
-│   ├── manifest.json    # Chrome Extension manifest
+│   ├── manifest.json
 │   └── icons/
-├── scripts/             # Icon generation
+├── scripts/
 ├── vite.config.ts
 └── tailwind.config.js
 Manifest (`public/manifest.json`)
@@ -100,12 +103,7 @@ Manifest (`public/manifest.json`)
       "run_at": "document_idle"
     }
   ],
-  "permissions": [
-    "storage",
-    "activeTab",
-    "tabs",
-    "scripting"
-  ],
+  "permissions": ["storage", "activeTab", "tabs", "scripting"],
   "host_permissions": [""]
 }
 
@@ -124,7 +122,7 @@ Tech Stack
 	•	Browser: Chrome Extension (MV3)
 
 Contributing
-Pull requests welcome! Feel free to open issues for bugs, feature ideas, or model improvements.
+Pull requests welcome! Open issues for bugs, features, or model improvements.
 License
 MIT © mrphatom
 
