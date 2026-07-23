@@ -55,13 +55,15 @@ Perfect for research, shopping, data collection, repetitive tasks, and more.
 	◦	Click Load unpacked → select the dist folder
 
 How It Works
+
 	1	Open the TabPilot popup.
 	2	Enter a task in plain English.
 	3	The extension creates a hidden sandbox tab.
 	4	The AI agent (via Blink) observes the page and decides actions step-by-step.
 	5	Results and extracted data appear in the popup.
 
-Project Structure
+## Project Structure
+
 tabpilot-/
 ├── src/
 │   ├── App.tsx          # Popup UI + logging
@@ -94,17 +96,3 @@ License
 MIT © mrphatom
 
 Made with ❤️ and a bit too many open tabs.
----
-
-### Repo Description (for GitHub "About" section)
-
-AI browser automation agent for Chrome. Give it natural language tasks — it intelligently navigates, clicks, types, and extracts data in a safe sandbox tab. Built with Blink SDK, React, and TypeScript.
----
-
-**Pro tips for next level**:
-- Record a quick 20-30s demo GIF (using something like ScreenToGif or Loom) and add it.
-- Add badges for stars, license, etc.
-- Consider a `CONTRIBUTING.md` later.
-
-This README makes it look production-ready and attractive to other devs. Want me to tweak anything (more features, shorter version, add screenshots section, etc.)? Or generate a manifest description too? XD
-
